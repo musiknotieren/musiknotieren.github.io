@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#121417">
+    <meta name="theme-color" content="#121417" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Datenschutz</title>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="0a8dc43c-4cfe-4cc1-97e6-c63d3f8b2d79"></script>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #121417;
+            --panel: #1b1f24;
+            --panel-elevated: #222831;
+            --text: #f7f5ef;
+            --muted: #aeb6bf;
+            --line: rgba(255, 255, 255, 0.1);
+            --line-strong: rgba(255, 255, 255, 0.18);
+            --primary: #d89020;
+            --primary-dark: #b66f14;
+            --primary-light: #e6a32b;
+            --primary-soft: rgba(216, 144, 32, 0.18);
+            --danger: #ef5b5b;
+            --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.22);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 14px;
+            left: 14px;
+            width: 38px;
+            height: 38px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--panel-elevated);
+            color: var(--text);
+            border: 1px solid var(--line);
+            padding: 0;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            z-index: 10;
+            box-shadow: none;
+        }
+
+        .back-btn:hover {
+            background: #303740;
+            border-color: var(--line-strong);
+            color: #fff;
+        }
+
+        main {
+            width: min(880px, calc(100% - 36px));
+            margin: 0 auto;
+            padding: 76px 0 68px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--line);
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 5vw, 2.65rem);
+            font-weight: 720;
+            letter-spacing: -0.035em;
+            line-height: 1.12;
+            color: var(--text);
+        }
+
+        h2 {
+            margin-top: 34px;
+            border-top: 1px solid var(--line);
+            padding-top: 24px;
+            color: var(--primary-light);
+            font-size: 1.32rem;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+        }
+
+        h3 {
+            margin-top: 24px;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        p,
+        li {
+            color: var(--muted);
+        }
+
+        a {
+            color: var(--primary-light);
+            text-underline-offset: 3px;
+        }
+
+        .notice {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 18px;
+            color: var(--text);
+            box-shadow: none;
+        }
+
+        .meta {
+            color: var(--muted);
+            margin: 0;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        code {
+            padding: 2px 5px;
+            border: 1px solid var(--line);
+            border-radius: 5px;
+            background: var(--panel-elevated);
+            color: var(--primary-light);
+        }
+
+        ::selection {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        :focus-visible {
+            outline: 3px solid rgba(216, 144, 32, 0.32);
+            outline-offset: 2px;
+        }
+
+        * {
+            scrollbar-color: #4b5663 #171b20;
+        }
+
+        @media (max-width: 640px) {
+            main {
+                width: min(100% - 28px, 880px);
+                padding-top: 72px;
+            }
+
+            h2 {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="back-btn" type="button" onclick="if (window.opener) { window.close(); } else { window.location.href = 'index.html'; }">←</button>
+
+    <main>
+        <header>
+            <h1>Datenschutzerklärung</h1>
+        </header>
+
+        <p class="notice">
+            Diese Datenschutzerklärung beschreibt die Datenverarbeitung der Musiknotationsapp „Musik“.
+            Die App dient zum Erstellen, Bearbeiten, Abspielen, Importieren und Exportieren von Noten.
+            Es gibt kein Benutzerkonto und es werden keine personenbezogenen Daten oder Cookies gespeichert.
+        </p>
+
+        <h2>1. Verantwortliche Stelle</h2>
+        <p>
+            Verantwortlich für die Datenverarbeitung auf dieser Website ist:
+        </p>
+        <p>
+            Michael Hsu<br>
+            An der Bleiche 30<br>
+            47608 Geldern<br>
+            Deutschland
+        </p>
+        <p>
+            Telefon: +49 1515 4872794<br>
+            E-Mail: <a href="mailto:michael-jhenhong.hsu@lmg-geldern.de">michael-jhenhong.hsu@lmg-geldern.de</a>
+        </p>
+
+        <h2>2. Kurzüberblick</h2>
+        <p>
+            Beim Aufruf der Website fallen technisch notwendige Zugriffsdaten an, damit die Seite geladen
+            und sicher betrieben werden kann. Die eigentlichen Notationsdaten, Projektlisten, Projektnamen,
+            Spuren, Instrumente, Tempo-, Takt- und Tonarteinstellungen werden in der App im Browser Ihres
+            Endgeräts gespeichert. Der Betreiber erhält diese Projektinhalte nicht automatisch.
+        </p>
+        <p>
+            Die App bindet externe technische Ressourcen ein, insbesondere Umami Analytics, VexFlow,
+            Tone.js, Font Awesome und Sounddateien für Instrumente. Diese Anbieter können beim Laden der
+            Ressourcen technische Verbindungsdaten erhalten, zum Beispiel IP-Adresse, Browserdaten,
+            Zeitpunkt und aufgerufene URL.
+        </p>
+
+        <h2>3. Hosting und Server-Logfiles</h2>
+        <p>
+            Diese Website wird extern gehostet bei:
+        </p>
+        <p>
+            InfinityFree<br>
+            Kwikstaartlaan 42, Unit G1517<br>
+            3704 GS Zeist<br>
+            Niederlande
+        </p>
+        <p>
+            Beim Besuch der Website verarbeitet der Hostinganbieter technisch erforderliche Daten, damit
+            die Website ausgeliefert werden kann. Dazu können insbesondere IP-Adresse, Datum und Uhrzeit
+            des Zugriffs, aufgerufene Datei, übertragene Datenmenge, Referrer-URL, Browsertyp,
+            Betriebssystem und Statuscodes gehören. Die Verarbeitung erfolgt auf Grundlage von Art. 6
+            Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren, stabilen und
+            effizienten Bereitstellung der App.
+        </p>
+
+        <h2>4. App-Daten im Browser</h2>
+        <p>
+            Die Musiknotationsapp speichert Arbeitsdaten lokal in Ihrem Browser, insbesondere:
+        </p>
+        <ul>
+            <li>Projektliste und Projektnamen,</li>
+            <li>Noten, Pausen, Akkorde, Taktinformationen und sonstige musikalische Angaben,</li>
+            <li>Spuren, Instrumente, Schlüssel, Dynamik- und Artikulationsangaben,</li>
+            <li>Tempo, Taktart, Tonart, aktive Spur und Anzeigeoptionen.</li>
+        </ul>
+        <p>
+            Diese Speicherung erfolgt über den lokalen Browserspeicher (localStorage). Sie ist notwendig,
+            damit Projekte nach dem Schließen oder Neuladen der App wieder verfügbar sind. Rechtsgrundlage
+            ist § 25 Abs. 2 Nr. 2 TDDDG sowie Art. 6 Abs. 1 lit. b DSGVO, soweit die Speicherung zur
+            Bereitstellung der von Ihnen gewünschten App-Funktionen erforderlich ist. Soweit einzelne
+            gespeicherte Angaben freiwillige Inhalte enthalten, erfolgt die Verarbeitung außerdem auf
+            Grundlage Ihrer Eingabe und Nutzung der App.
+        </p>
+        <p>
+            Der Betreiber kann diese lokal gespeicherten Projektinhalte nicht ohne Weiteres einsehen. Sie
+            können die Daten in der App löschen oder über die Browserfunktionen den lokalen Speicher der
+            Website entfernen.
+        </p>
+
+        <h2>5. Import und Export von Musikdateien</h2>
+        <p>
+            Die App kann MusicXML-Dateien importieren. Ausgewählte Dateien werden mit der
+            Browser-Funktion FileReader auf Ihrem Endgerät gelesen und in der App verarbeitet. Eine
+            Übertragung der importierten Datei an den Betreiber findet durch diese Funktion nicht statt.
+        </p>
+        <p>
+            Exportfunktionen erzeugen Dateien lokal im Browser, zum Beispiel MusicXML, Audio-Dateien oder
+            eine Druck-/PDF-Ansicht. Beim PDF-Export wird die Druckfunktion Ihres Browsers verwendet. Beim
+            Audio-Export wird die Wiedergabe der App über die Web-Audio- und MediaRecorder-Funktionen des
+            Browsers aufgezeichnet. Die App greift dabei nicht auf Mikrofon oder Kamera zu.
+        </p>
+
+        <h2>6. Offline-Nutzung, Service Worker und Cache</h2>
+        <p>
+            Die App ist als Progressive Web App vorbereitet und registriert einen Service Worker. Dabei
+            können Programmdateien, Bibliotheken, Schriftarten und andere technische Ressourcen im
+            Browser-Cache beziehungsweise in der Cache-Storage-Funktion Ihres Browsers gespeichert werden.
+            Dies dient dazu, die App schneller zu laden und bestimmte Ressourcen auch offline oder bei
+            instabiler Verbindung verfügbar zu halten.
+        </p>
+        <p>
+            Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG sowie Art. 6 Abs. 1 lit. f DSGVO. Unser
+            berechtigtes Interesse liegt in einer funktionsfähigen, schnellen und offline nutzbaren
+            Musiknotationsapp. Sie können diese Daten über die Website- beziehungsweise Browserdaten Ihres
+            Browsers löschen.
+        </p>
+
+        <h2>7. Umami Analytics</h2>
+        <p>
+            Diese Website nutzt Umami Analytics über <code>cloud.umami.is</code>, um allgemeine
+            Nutzungsstatistiken zu erfassen. Nach Angaben von Umami ist der Dienst datenschutzfreundlich
+            ausgestaltet, verwendet keine Cookies und erhebt keine personenbezogenen Daten. Erfasst werden
+            insbesondere Seitenaufrufe und technische Nutzungsinformationen wie Referrer, Browser,
+            Betriebssystem, Gerätetyp und ungefähres Land.
+        </p>
+        <p>
+            Anbieter ist Umami Software, Inc., USA. Beim Laden des Umami-Skripts und beim Senden von
+            Statistikdaten kann eine Verbindung zu Servern von Umami hergestellt werden. Dabei können
+            technische Verbindungsdaten, insbesondere Ihre IP-Adresse, an Umami übermittelt werden. Die
+            Auswertung dient ausschließlich dazu, die Nutzung der App zu verstehen, technische Probleme zu
+            erkennen und die App zu verbessern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser
+            berechtigtes Interesse liegt in einer datensparsamen Reichweitenmessung und Verbesserung des
+            Angebots.
+        </p>
+        <p>
+            Weitere Informationen finden Sie in der Dokumentation von Umami:
+            <a href="https://umami.is/docs" target="_blank" rel="noopener noreferrer">https://umami.is/docs</a>.
+        </p>
+
+        <h2>8. Externe Bibliotheken, Schriftarten und Sounddateien</h2>
+        <p>
+            Für Notensatz, Audiowiedergabe, Symbole und Instrumentenklänge lädt die App externe
+            technische Ressourcen von folgenden Diensten:
+        </p>
+        <ul>
+            <li>VexFlow über <code>unpkg.com</code>,</li>
+            <li>Tone.js und Font Awesome über <code>cdnjs.cloudflare.com</code>,</li>
+            <li>Instrumenten-Samples über <code>tonejs.github.io</code> und <code>gleitz.github.io</code>.</li>
+        </ul>
+        <p>
+            Beim Abruf dieser Ressourcen erhalten die jeweiligen Anbieter technisch notwendige
+            Verbindungsdaten, zum Beispiel IP-Adresse, Browserinformationen, Zeitpunkt des Abrufs und die
+            angeforderte Datei. Die Einbindung ist erforderlich, damit Noten dargestellt, die Oberfläche
+            mit Symbolen angezeigt und ausgewählte Instrumente abgespielt werden können. Rechtsgrundlage
+            ist Art. 6 Abs. 1 lit. f DSGVO. Soweit Ressourcen im Browser gespeichert werden, gilt
+            ergänzend § 25 Abs. 2 Nr. 2 TDDDG.
+        </p>
+
+        <h2>9. Cookies und ähnliche Technologien</h2>
+        <p>
+            Die App setzt nach derzeitigem Stand keine eigenen Cookies zur Nutzeridentifikation ein.
+            Stattdessen werden für die App-Funktionen localStorage, Browser-Cache und Cache Storage
+            verwendet. Diese Speichertechniken sind in den vorstehenden Abschnitten beschrieben. Externe
+            Anbieter können im Rahmen ihrer technischen Bereitstellung eigene Protokoll- oder
+            Sicherheitsmechanismen einsetzen.
+        </p>
+
+        <h2>10. Kontaktaufnahme</h2>
+        <p>
+            Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir die von Ihnen mitgeteilten
+            Daten zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern
+            Ihre Anfrage mit einer vertraglichen oder vorvertraglichen Angelegenheit zusammenhängt, und
+            ansonsten Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der Bearbeitung
+            von Anfragen.
+        </p>
+        <p>
+            Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und
+            keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+        </p>
+
+        <h2>11. Speicherdauer</h2>
+        <p>
+            Lokal in Ihrem Browser gespeicherte App-Daten bleiben gespeichert, bis Sie sie in der App
+            löschen oder die Website-Daten über Ihren Browser entfernen. Server-Logfiles und
+            Anbieterprotokolle werden nach den jeweiligen technischen und gesetzlichen Vorgaben der
+            beteiligten Anbieter gespeichert. Kontaktanfragen speichern wir nur so lange, wie dies zur
+            Bearbeitung und etwaigen Nachweiszwecken erforderlich ist.
+        </p>
+
+        <h2>12. Empfänger und Drittlandübermittlungen</h2>
+        <p>
+            Empfänger personenbezogener Daten können Hostinganbieter, Analyseanbieter und Anbieter
+            externer technischer Ressourcen sein. Bei der Einbindung von Umami, GitHub Pages,
+            Cloudflare/cdnjs, unpkg und anderen technischen Diensten kann eine Übermittlung in Staaten
+            außerhalb der Europäischen Union beziehungsweise des Europäischen Wirtschaftsraums nicht
+            ausgeschlossen werden. In solchen Fällen erfolgt die Übermittlung auf Grundlage der jeweils
+            anwendbaren Datenschutzmechanismen der Anbieter, etwa Angemessenheitsbeschlüssen,
+            Standardvertragsklauseln oder sonstigen Garantien nach Art. 44 ff. DSGVO.
+        </p>
+
+        <h2>13. Ihre Rechte</h2>
+        <p>
+            Sie haben nach Maßgabe der DSGVO insbesondere folgende Rechte:
+        </p>
+        <ul>
+            <li>Recht auf Auskunft nach Art. 15 DSGVO,</li>
+            <li>Recht auf Berichtigung nach Art. 16 DSGVO,</li>
+            <li>Recht auf Löschung nach Art. 17 DSGVO,</li>
+            <li>Recht auf Einschränkung der Verarbeitung nach Art. 18 DSGVO,</li>
+            <li>Recht auf Datenübertragbarkeit nach Art. 20 DSGVO,</li>
+            <li>Recht auf Widerspruch gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO nach Art. 21 DSGVO,</li>
+            <li>Recht auf Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft.</li>
+        </ul>
+        <p>
+            Zur Ausübung Ihrer Rechte können Sie sich jederzeit an die oben genannte verantwortliche Stelle
+            wenden.
+        </p>
+
+        <h2>14. Beschwerderecht bei einer Aufsichtsbehörde</h2>
+        <p>
+            Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren, insbesondere in
+            dem Mitgliedstaat Ihres gewöhnlichen Aufenthalts, Ihres Arbeitsplatzes oder des Orts des
+            mutmaßlichen Datenschutzverstoßes.
+        </p>
+
+        <h2>15. Keine automatisierte Entscheidungsfindung</h2>
+        <p>
+            Eine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO
+            findet durch diese App nicht statt.
+        </p>
+
+        <h2>16. Änderungen dieser Datenschutzerklärung</h2>
+        <p>
+            Diese Datenschutzerklärung kann angepasst werden, wenn sich die App, die eingesetzten Dienste
+            oder die rechtlichen Anforderungen ändern. Es gilt die jeweils auf dieser Seite veröffentlichte
+            Fassung.
+        </p>
+    </main>
+</body>
+
+</html>
